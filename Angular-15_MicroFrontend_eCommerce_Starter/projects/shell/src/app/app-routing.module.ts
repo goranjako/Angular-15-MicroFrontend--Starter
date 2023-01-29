@@ -5,11 +5,11 @@ const routes: Routes = [
 
  {
   path: '',
-  loadChildren: () => import('products/Module').then(m => m.ProductsModule)
+  loadChildren: () => import('products/Module').then(m => m.ProductModule)
 },
 
 {
-  path: '',
+  path: 'admin',
   loadChildren: () => import('admin/Module').then(m => m.AdminModule)
 },
 ];
