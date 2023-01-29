@@ -1,7 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+
+ {
+  path: '',
+  loadChildren: () => import('products/Module').then(m => m.ProductsModule)
+},
+
+{
+  path: '',
+  loadChildren: () => import('admin/Module').then(m => m.AdminModule)
+},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
