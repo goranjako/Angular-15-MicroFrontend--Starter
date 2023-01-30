@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "auth-lib": [
+      "@auth-lib": [
         "projects/auth-lib/src/public-api.ts"
       ]
     },

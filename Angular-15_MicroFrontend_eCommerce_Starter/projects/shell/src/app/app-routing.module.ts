@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from 'projects/auth-lib/src/lib/auth/login/login.component';
-import { RegisterComponent } from 'projects/auth-lib/src/lib/auth/register/register.component';
+import { AUTH_ROUTES } from '@auth-lib';
+
 import { NotFoundComponent } from './index/not-found/not-found.component';
 
 const routes: Routes = [
@@ -13,8 +13,7 @@ const routes: Routes = [
   path: 'admin',
   loadChildren: () => import('admin/Module').then(m => m.AdminModule)
 },
-{path:"login", component:LoginComponent},
-{path:"sign-up", component:RegisterComponent},
+...AUTH_ROUTES,
 {path:"**", component:NotFoundComponent}
 ];
 

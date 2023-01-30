@@ -8,3 +8,4 @@ export * from './lib/auth-lib.module';
 export * from './lib/auth/auth.guard';
 export * from './lib/auth/interceptor.interceptor';
 export * from './lib/material/material.module';
+export * from './lib/auth.routes';
