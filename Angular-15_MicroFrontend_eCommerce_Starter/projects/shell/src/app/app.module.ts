@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './index/not-found/not-found.component';
@@ -15,11 +15,12 @@ import { MaterialModule } from '@auth-lib';
     NotFoundComponent,
     FooterComponent,
     AboutComponent,
- 
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, MaterialModule
+    AppRoutingModule, MaterialModule, BrowserAnimationsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
